@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,4 +16,38 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <script>
+    $(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+      $('.nav').addClass('affix');
+      console.log("OK");
+  } else {
+      $('.nav').removeClass('affix');
+  }
+});
+
+
+$('.navTrigger').click(function () {
+$(this).toggleClass('active');
+console.log("Clicked menu");
+$("#mainListDiv").toggleClass("show_list");
+$("#mainListDiv").fadeIn();
+
+});
+  </script>
+ 	<script src="../src/assets/vendor/animsition/js/animsition.min.js"></script>
+   <!--===============================================================================================-->
+     <script src="../src/assets/vendor/bootstrap/js/popper.js"></script>
+     <script src="../src/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+   <!--===============================================================================================-->
+     <script src="../src/assets/vendor/select2/select2.min.js"></script>
+   <!--===============================================================================================-->
+     <script src="../src/assets/vendor/daterangepicker/moment.min.js"></script>
+     <script src="../src/assets/vendor/daterangepicker/daterangepicker.js"></script>
+   <!--===============================================================================================-->
+     <script src="../src/assets/vendor/countdowntime/countdowntime.js"></script>
+     <script src="../src/assets/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </html>

@@ -1,33 +1,29 @@
+<style scoped href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></style>
+<style scoped href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></style>
+<style scoped href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></style>
 <template>
-    <div>
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
- <a class="navbar-brand" href="#">
-    <img src="../assets/logo.jpg" width="60" height="60" alt="">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-      <router-link class="nav-link" to="/">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </router-link>
-      </li>
-      <li class="nav-item">
-               <router-link class="nav-link" to="/about">
-        <a class="nav-link" href="#">About</a>
-          </router-link>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<div>
+<nav class="nav">
+        <div class="container">
+            <div class="logo" >
+              <img id="logoblack" src="../assets/logo.png" width="200px" height="35px" alt="">
+               <img id="logowhite" src="../assets/logowhite.png" width="200px" height="35px" alt="">
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pay Ticket</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
     </div>
 </template>
 
