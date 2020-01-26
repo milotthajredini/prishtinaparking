@@ -59,10 +59,8 @@
 </template>
 
 <script>
-export default {
-
-}
 </script>
+
 <script src="../assets/js/main.js"></script>
 
 <style src="../assets/css/main.css" scoped></style>
