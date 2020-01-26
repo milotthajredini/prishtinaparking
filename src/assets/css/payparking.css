@@ -1,0 +1,59 @@
+.backgroundi{
+    
+        width: 100%;
+        height: 100vh;
+        background-image: url('../payparkingbck.jpg');
+        background-position: center ;
+        background-size:cover;
+    
+    
+}
+#forma1{
+ z-index: 1;
+ position: absolute;
+ margin-top: 350px;
+ margin-left: 146px;
+}
+#parkingslog {
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #666666;
+    /* margin-top: -740px; */
+    margin-top: -180px;
+    margin-left:-100px;
+    position: absolute;
+   
+    z-index: auto;
+}
+.form-control {
+    border-radius: 30px;
+    border-color: #252525;
+    margin-bottom: 25px;
+    height: 47px;
+    border-width: 1px;
+    width: 315px;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    color: #666666;
+    font-size: 15px;
+  }
+  
+  [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    /*border-radius: 30px;*/
+    /*border-color: #252525;*/
+    /*border-width: 1px;*/
+    /*background-image: url("https://img.icons8.com/cotton/2x/plus--v3.png");*/
+    /*background-size: 30px 30px;*/
+    /*width: 100px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 5px center;*/
+    /*text-align: right;*/
+    /*height: 40px;*/
+  }
+  
+  #formCheck-1 {
+    /*width: 15px;*/
+  }
+  
+  

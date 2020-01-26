@@ -16,7 +16,7 @@
                    <router-link class="nav-link" to="/">
                     <li><a href="#">Home</a></li>
                     </router-link>
-                     <router-link class="nav-link" to="/buyticket">
+                     <router-link class="nav-link" to="/payparking">
                     <li><a href="#">Pay Ticket</a></li>
                      </router-link>
                       <router-link class="nav-link" to="/services">
