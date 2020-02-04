@@ -2,7 +2,7 @@
     
         width: 100%;
         height: 100vh;
-        background-image: url('../payparkingbck.jpg');
+        background-image: url('../Backgroundi2.jpg');
         background-position: center ;
         background-size:cover;
     
@@ -28,10 +28,10 @@
 }
 .form-control {
     border-radius: 30px;
-    border-color: #252525;
+    border-color: #66666;
     margin-bottom: 25px;
     height: 47px;
-    border-width: 1px;
+    border-width: 3px;
     width: 315px;
     font-weight: bold;
     font-family: Montserrat, sans-serif;
