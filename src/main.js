@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import * as firebase from "firebase";
 
 import {routes} from './routes';
 
+import store from "./store";
 Vue.filter('to-lowercase',function(value){
   return value.toLowerCase();
 });
@@ -24,6 +26,23 @@ Vue.directive('highlight',{
   }
 });
 
+const firebaseConfig = {
+  apiKey: "AIzaSyC1lsjUwwwSCZmy6WdwCNQspliFZdJj8SQ",
+  authDomain: "parking-849a8.firebaseapp.com",
+  databaseURL: "https://parking-849a8.firebaseio.com",
+  projectId: "parking-849a8",
+  storageBucket: "parking-849a8.appspot.com",
+  messagingSenderId: "857068251153",
+  appId: "1:857068251153:web:f11185434b9616061929b0",
+  measurementId: "G-MRNDH2LFZF"
+};
+
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+firebase.auth().onAuthStateChanged(user => {
+  store.dispatch("fetchUser", user);
+});
 
 Vue.use(VueRouter);
 const router = new VueRouter({
@@ -31,6 +50,7 @@ const router = new VueRouter({
 });
 new Vue({
   el: '#app',
-  router,
+store,
+router,
   render: h => h(App)
 })

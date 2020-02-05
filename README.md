@@ -1,4 +1,4 @@
-# parking
+# projektiparking
 
 ## Project setup
 ```

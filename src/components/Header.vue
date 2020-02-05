@@ -25,6 +25,25 @@
                        <router-link class="nav-link" to="/about">
                     <li><a href="#">About</a></li>
                     </router-link>
+                      <router-link v-if="user.loggedIn" class="nav-link" to="/dashboard">
+                    <li><a href="#">Dashboard</a></li>
+                    </router-link>
+          
+                      <router-link v-if="user.loggedIn" class="nav-link" to="">
+                     <li ><a >{{user.data.displayName}}</a></li>  </router-link>
+                      
+                      <router-link v-if="user.loggedIn" class="nav-link" to="">
+                        <li  v-if="user.loggedIn"><a  @click.prevent="signOut">Sign Out</a></li>
+                          </router-link>
+                    <template v-else>
+                         <router-link class="nav-link" to="/login">
+                    <li><a href="#">Login</a></li>
+                      </router-link>
+                          <router-link class="nav-link" to="/register">
+                    <li><a href="#">Register</a></li>
+                      </router-link>
+                    </template>
+              
                 </ul>
             </div>
             <span class="navTrigger">
@@ -38,3 +57,27 @@
 </template>
 
 
+<script>
+import { mapGetters } from "vuex";
+import firebase from "firebase";
+export default {
+  computed: {
+    ...mapGetters({
+// map `this.user` to `this.$store.getters.user`
+      user: "user"
+    })
+  },
+  methods: {
+    signOut() {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          this.$router.replace({
+            name: "home"
+          });
+        });
+    }
+  }
+};
+</script>
