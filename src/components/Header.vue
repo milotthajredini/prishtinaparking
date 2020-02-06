@@ -22,14 +22,12 @@
                         <router-link v-else class="nav-link" to="/login">
                     <li><a href="#">Pay Parking</a></li>
                      </router-link>
-                      <router-link class="nav-link" to="/services">
-                    <li><a href="#">Services</a></li>
-                      </router-link>
-                       <router-link class="nav-link" to="/about">
-                    <li><a href="#">About</a></li>
+                
+                       <router-link class="nav-link" to="/contact">
+                    <li><a href="#">Contact</a></li>
                     </router-link>
                       <router-link v-if="user.loggedIn" class="nav-link" to="/dashboard">
-                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Parking History</a></li>
                     </router-link>
           
                       <router-link v-if="user.loggedIn" class="nav-link" to="">

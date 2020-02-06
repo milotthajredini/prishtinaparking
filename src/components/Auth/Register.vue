@@ -5,7 +5,8 @@
 
 <template>
 <div class="page-content">
-		<div class="form-v2-content">
+		<div class="form-v2-content"> 
+			<div v-if="error" class="alert alert-danger">{{error}}</div>
 			<div class="form-left">
 				<img src="../../assets/form-v2.jpg" alt="form">
 				<div class="text-1">
@@ -15,6 +16,7 @@
 					<p><span>$9.99</span>/ Month</p>
 				</div>
 			</div>
+
 			<form action="#" @submit.prevent="submit"  class="form-detail" id="myform">
 				<h2>Registration Form</h2>
 				<div class="form-row">
