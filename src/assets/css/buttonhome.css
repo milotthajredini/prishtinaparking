@@ -24,6 +24,19 @@
     color: #8ed2c0;
 
 }
+#button3pay{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 512px;
+    font-size: 20px ;
+    border-radius: 30px;
+    background-color: #8ed2c0;
+    border-color: #8ed2c0;
+    border-width: 3px;
+    color: #ffffff;
+    margin-bottom: 15px;
+   
+}
 
 #button2login:hover{
     background-color: #d1f3ea;
@@ -60,10 +73,34 @@
 and (min-device-width : 375px) 
 and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3) {
+    #button1register{
+        width: 360px;
+    }
+    #button2login{
+        width: 360px;
+    }
+    #button3pay  {
+        width: 360px;
+        margin-top: 55px;
+        
+    }
+    #slogan{
+        font-size: 25px;
+       justify-content: center;
+       text-align: start;
+       display: flex;
+       margin-top: 140px;
+       margin-left: 3.5%;
 
+    }
     .buttonslogin{
 
-            display: none;
+            display: flex;
+           margin: auto;
+           z-index: 1;
+           position: absolute;
+           margin-top: -250px;
+          
     }
 
 }

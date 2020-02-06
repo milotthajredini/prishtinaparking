@@ -42,8 +42,8 @@
     font-family: Montserrat, sans-serif;
     color: #666666;
     font-size: 15px;
-  }
   
+}
   [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     /*border-radius: 30px;*/
     /*border-color: #252525;*/
@@ -61,4 +61,74 @@
     /*width: 15px;*/
   }
   
+  @media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+  .backgroundi{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url('../logomobilepay.png');
+    background-position: center top ;
+    background-size:cover;
+
+
+}
+  #forma1{
+    width: 200px !important;
+    margin: auto !important;
+    margin-top: 110% !important;
+    display: flex;
+    justify-content: center;
+  }
+  #parkingslog{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #666666;
+    /* margin-top: -740px; */
+    width: 250px !important;
+    position: absolute;
+    margin-left: 45% !important;
+   padding-top: 100px;
+   
+    z-index: auto;
+}
   
+  form{
+    width: 200px !important;
+    margin: auto !important;
+    margin-left: 10% !important;
+    margin-top: -40px !important;
+  }
+
+  
+    .form-control{
+      width: 350px !important;
+    }
+    .radiobtn{
+      display: block;
+      margin: auto;
+      margin-left: 10%;
+    }
+    label{
+      margin-left: 10%;
+    }
+    #paguajbtn{
+      width: 170px !important;
+
+    }
+    #totalibtn{
+      width :170px !important;
+    }
+    .btnpay{
+      display: inline-flex !important;
+    }
+    #targat{
+      width: 228px !important;
+    }
+    #shto{
+      margin-right: -250px !important;
+    }
+}
