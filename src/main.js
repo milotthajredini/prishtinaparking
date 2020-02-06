@@ -2,10 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 import * as firebase from "firebase";
-
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import {routes} from './routes';
-
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 import store from "./store";
+import { FormRadioPlugin } from 'bootstrap-vue';
+Vue.use(FormRadioPlugin)
 Vue.filter('to-lowercase',function(value){
   return value.toLowerCase();
 });
@@ -39,11 +41,12 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
-
+Vue.use(FormRadioPlugin)
 firebase.auth().onAuthStateChanged(user => {
   store.dispatch("fetchUser", user);
 });
-
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
 Vue.use(VueRouter);
 const router = new VueRouter({
   routes

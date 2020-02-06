@@ -51,5 +51,8 @@ export default {
 @import '../src/assets/header-script.js';
 @import '../src/assets/css/Footer-Basic.css';
 @import '../src/assets/css/scroll-footer.css';
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css';
+
 /* @import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; */
 </style>

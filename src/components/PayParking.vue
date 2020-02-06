@@ -19,18 +19,33 @@
                 <option value="13">This is item 2</option>
                 <option value="14">This is item 3</option>
                 </select><label style="color: #84bcfd;font-family: Montserrat, sans-serif;font-size: 18px;width: 200px;font-weight: bold;">Zgjith zonën:</label>
-                <div class="d-flex" style="margin-bottom: 20px;">
-                    <div class="form-check" style="width: 150px;"><input class="form-check-input" type="radio" id="formCheck-2"><label class="form-check-label" for="formCheck-2" style="font-size: 15px;font-family: Montserrat, sans-serif;color: #666666;font-weight: bold;">Zona I 2€/h</label></div>
-                    <div
-                        class="form-check" style="width: 150px;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="font-size: 15px;font-family: Montserrat, sans-serif;color: #666666;font-weight: bold;">Zona II 1€/h</label></div>
-                <div
-                    class="form-check" style="width: 150px;margin-left: -2px;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="font-size: 15px;font-family: Montserrat, sans-serif;color: #666666;font-weight: bold;">Zona III 0.50€/h</label></div>
-    </div><button class="btn btn-primary" type="button" style="width: 210px;border-width: 3px;border-radius: 30px;background-color: #fff;font-size: 20px;color: #252525;font-family: Montserrat, sans-serif;font-weight: bold;height: 47px;margin-right: 15px;border-color: #8ed2c0;">Totali:</button>
+             <div class="radiobtn">
+            
+  <b-form-radio style="margin-right:15px;font-size:15px;" name="radio-size" v-model="selected"  value="2€"  size="lg">Zona I 2€/h</b-form-radio>
+  <b-form-radio style="margin-right:15px;font-size:15px;" name="radio-size"  v-model="selected"  value="1€" size="lg">Zona II 1€/h</b-form-radio>
+  <b-form-radio style="margin-right:15px;font-size:15px;" name="radio-size" v-model="selected"  value="0.50€"  size="lg">Zona III 0.50€/h</b-form-radio>
+             
+</div><button class="btn btn-primary" type="button" style="width: 210px;border-width: 3px;border-radius: 30px;background-color: #fff;font-size: 20px;color: #252525;font-family: Montserrat, sans-serif;font-weight: bold;height: 47px;margin-right: 15px;border-color: #8ed2c0;">Totali:<strong>{{ selected }}</strong></button> 
+
+   
     <button
         class="btn btn-primary" type="button" style="width: 210px;height: 47px;border-radius: 30px;font-size: 20px;font-family: Montserrat, sans-serif;font-weight: bold;background-color: #84bcdf;border-color: #84bcdf;">Paguaj</button>
         </form>
         </div>
 </div>
 </div>
+
 </template>
+
+
+
+<script>
+export default {
+     data() {
+      return {
+        selected: ' '
+      }
+    }
+}
+</script>
 

@@ -16,8 +16,11 @@
                    <router-link class="nav-link" to="/">
                     <li><a href="#">Home</a></li>
                     </router-link>
-                     <router-link class="nav-link" to="/payparking">
-                    <li><a href="#">Pay Ticket</a></li>
+                     <router-link v-if="user.loggedIn" class="nav-link" to="/payparking">
+                    <li><a href="#">Pay Parking</a></li>
+                     </router-link>
+                        <router-link v-else class="nav-link" to="/login">
+                    <li><a href="#">Pay Parking</a></li>
                      </router-link>
                       <router-link class="nav-link" to="/services">
                     <li><a href="#">Services</a></li>
