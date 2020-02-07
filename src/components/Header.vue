@@ -22,16 +22,18 @@
                         <router-link v-else class="nav-link" to="/login">
                     <li><a href="#">Pay Parking</a></li>
                      </router-link>
-                
+                     <router-link  class="nav-link" to="/services">
+                    <li><a href="#">Services</a></li>
+                     </router-link>
                        <router-link class="nav-link" to="/contact">
                     <li><a href="#">Contact</a></li>
                     </router-link>
-                      <router-link v-if="user.loggedIn" class="nav-link" to="/dashboard">
+                      <!-- <router-link v-if="user.loggedIn" class="nav-link" to="/dashboard">
                     <li><a href="#">Parking History</a></li>
-                    </router-link>
+                    </router-link> -->
           
                       <router-link v-if="user.loggedIn" class="nav-link" to="">
-                     <li ><a >{{user.data.displayName}}</a></li>  </router-link>
+                     <li><a>{{user.data.displayName}}</a></li>  </router-link>
                       
                       <router-link v-if="user.loggedIn" class="nav-link" to="">
                         <li  v-if="user.loggedIn"><a  @click.prevent="signOut">Sign Out</a></li>

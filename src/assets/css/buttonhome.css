@@ -38,6 +38,20 @@
    
 }
 
+#button4history{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 512px;
+    font-size: 20px ;
+    border-radius: 30px;
+    background-color: #ffffff;
+    border-color: #8ed2c0;
+    border-width: 3px;
+    color: #8ed2c0;
+    
+   
+}
+
 #button2login:hover{
     background-color: #d1f3ea;
     border-color: #d1f3ea;

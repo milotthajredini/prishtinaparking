@@ -13,8 +13,12 @@
    <div class="buttonslogin">
       <div class="bs-example">
         <router-link class="nav-link" to="/payparking">
-    <button type="button" class="btn btn-primary btn-lg btn-block" id="button3pay" style="margin-top:-120px;">Pay Parking</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="button3pay">Pay Parking</button>
     </router-link>
+          <router-link class="nav-link" to="/history">
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="button4history">Parking History</button>
+    </router-link>
+  
   
 </div>
     </div>   
