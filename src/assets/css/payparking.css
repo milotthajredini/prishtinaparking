@@ -2,7 +2,7 @@
     
         width: 100%;
         height: 100vh;
-        background-image: url('../Backgroundi2.jpg');
+        background-image: url('../img/Backgroundi2.jpg');
         background-position: center ;
         background-size:cover;
     
@@ -69,7 +69,7 @@ and (-webkit-device-pixel-ratio : 3) {
     
     width: 100%;
     height: 100vh;
-    background-image: url('../logomobilepay.png');
+    background-image: url('../img/logomobilepay.png');
     background-position: center top ;
     background-size:cover;
 

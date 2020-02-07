@@ -7,8 +7,8 @@
         <div class="container">
             <div class="logo" >
                 <router-link to="/">
-              <img id="logoblack" src="../assets/logo.png" width="200px" height="35px" alt="">
-               <img id="logowhite" src="../assets/logowhite.png" width="200px" height="35px" alt="">
+              <img id="logoblack" src="../assets/img/logo.png" width="200px" height="35px" alt="">
+               <img id="logowhite" src="../assets/img/logowhite.png" width="200px" height="35px" alt="">
                </router-link>
             </div>
             <div id="mainListDiv" class="main_list">

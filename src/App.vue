@@ -46,9 +46,9 @@ export default {
 
 <style>
 /* @import url('https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'); */
-@import '../src/assets/style.css';
-@import '../src/assets/header.css';
-@import '../src/assets/header-script.js';
+@import '../src/assets/css/style.css';
+@import '../src/assets/css/header.css';
+@import '../src/assets/js/header-script.js';
 @import '../src/assets/css/Footer-Basic.css';
 @import '../src/assets/css/scroll-footer.css';
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';

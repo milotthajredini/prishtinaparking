@@ -10,7 +10,7 @@
 						Welcome
 					</span>
 							<span class="login100-form-avatar">
-						<img src="../../assets/avatar.png" alt="AVATAR">
+						<img src="../../assets/img/avatar.png" alt="AVATAR">
 					</span>
 					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter email">
 						<input class="input100" type="email" v-model="form.email" autofocus required id="email"  name="email"/>

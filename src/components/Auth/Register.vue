@@ -8,7 +8,7 @@
 		<div class="form-v2-content"> 
 			<div v-if="error" class="alert alert-danger">{{error}}</div>
 			<div class="form-left">
-				<img src="../../assets/form-v2.jpg" alt="form">
+				<img src="../../assets/img/form-v2.jpg" alt="form">
 				<div class="text-1">
 					<p>Bring Your Music Along<span>try Unlimited</span></p>
 				</div>

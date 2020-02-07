@@ -10,7 +10,7 @@
    <div  class="footer-basic">
           <footer>
               <div class="social">
-                <img src="../assets/logofooter.png" width="90" height="50" alt="">
+                <img src="../assets/img/logofooter.png" width="90" height="50" alt="">
               </div>
               <ul class="list-inline">
                 <router-link  to='./'>
