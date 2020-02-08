@@ -5,13 +5,13 @@
     <div class="col-lg-6 col-md-6 col-sm-12">
     <form @submit="onSubmit">
     <div class="form-group">
-    <input type="text" class="form-control" placeholder="Name" v-model="contacts.name">
+    <input type="text" class="form-control" placeholder="Name" v-model="contact.name">
     </div>
     <div class="form-group">
-    <input type="email" class="form-control" placeholder="Email" v-model="contacts.email">
+    <input type="email" class="form-control" placeholder="Email" v-model="contact.email">
     </div>
     <div class="form-group">
-    <textarea class="form-control" rows="4" placeholder="Enter your comments about site" v-model="contacts.description"></textarea>
+    <textarea class="form-control" rows="4" placeholder="Enter your comments about site" v-model="contact.description"></textarea>
     </div>
     <input type="submit" class="btn btn-secondary btn-block" value="Send">
     </form>
@@ -25,7 +25,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'EditContacts',
+  name: 'EditContact',
   data () {
     return {
       contact: {}

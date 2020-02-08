@@ -9,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr v-for="contact in contacts" :key="contact._id">
+    <tr v-for="contact in contact" :key="contact._id">
                     <td>{{ contact.name }}</td>
                     <td>{{ contact.email }}</td>
                     <td>{{ contact.description }}</td>
@@ -25,7 +25,7 @@
 /* eslint-disable */
 import axios from 'axios';
     export default {
-      name: 'ShowContacts',
+      name: 'ShowContact',
         data(){
             return{
                 contact: {}
