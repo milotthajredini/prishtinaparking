@@ -20,28 +20,28 @@
 				<img src="../assets/img/icons/symbol-01.png" alt="SYMBOL-MAIL">
 			</span>
 
-			<form class="contact100-form validate-form flex-sb flex-w">
+			<form action="#" @submit="onSubmit" class="contact100-form validate-form flex-sb flex-w">
 				<span class="contact100-form-title">
 					Na Kontaktoni
 				</span>
 
 				<div class="wrap-input100 rs1 validate-input" data-validate = "Name is required">
-					<input class="input100" type="text" name="name" placeholder="Name">
+					<input class="input100" type="text" name="name" v-model="contact.name" placeholder="Name">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 rs1 validate-input" data-validate = "Email is required: e@a.z">
-					<input class="input100" type="text" name="email" placeholder="Email Address">
+					<input class="input100" type="text" name="email" v-model="contact.email" placeholder="Email Address">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<textarea class="input100" name="message" placeholder="Write Us A Message"></textarea>
+					<textarea class="input100" name="message" v-model="contact.description" placeholder="Write Us A Message"></textarea>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
+					<button type="submit" class="contact100-form-btn">
 						Send
 					</button>
 				</div>
@@ -80,29 +80,27 @@
 
 <script>
 /* eslint-disable*/
-import firebase from "firebase";
+import axios from 'axios'
 
 export default {
-  data() {
+  name: 'CreateContact',
+  data () {
     return {
-      form: {
-        email: "",
-        password: ""
-      },
-      error: null
-    };
+      contact:{},
+    }
   },
   methods: {
-    submit() {
-      firebase
-        .auth()
-        .signInWithEmailAndPassword(this.form.email, this.form.password)
-        .then(data => {
-          this.$router.push({name: 'home',})
+    onSubmit () {
+      
+      axios.post(`http://localhost:4000/contact`, this.contact)
+      .then(response => {
+        //console.log(response);
+        this.$router.push({
+          name: 'user',
+          //params: { id: response.data._id }
         })
-        .catch(err => {
-          this.error = err.message;
-        });
+        })
+      
     }
   },
   mounted(){

@@ -28,6 +28,9 @@
                        <router-link class="nav-link" to="/contact">
                     <li><a href="#">Contact</a></li>
                     </router-link>
+                            <router-link class="nav-link" to="/user">
+                    <li><a href="#">User</a></li>
+                    </router-link>
                       <!-- <router-link v-if="user.loggedIn" class="nav-link" to="/dashboard">
                     <li><a href="#">Parking History</a></li>
                     </router-link> -->
