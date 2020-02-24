@@ -1,11 +1,13 @@
+/*eslint-disable*/ 
 const express = require('express');
-const  path = require('path');
+// const  path = require('path');
 const  bodyParser = require('body-parser');
 const  cors = require('cors');
 const  mongoose = require('mongoose');
 const  config = require('./DB');
 const contact = require('../routes/contact');
 const payparking = require('../routes/payparking');
+
 
 mongoose.Promise= global.Promise;
 mongoose.connect(config.DB);

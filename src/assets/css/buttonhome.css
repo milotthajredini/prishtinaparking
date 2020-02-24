@@ -93,9 +93,12 @@ and (-webkit-device-pixel-ratio : 3) {
     #button2login{
         width: 360px;
     }
+    #button4history{
+        width: 360px;
+    }
     #button3pay  {
         width: 360px;
-        margin-top: 55px;
+        margin-top: 5px;
         
     }
     #slogan{

@@ -1,3 +1,4 @@
+/*eslint-disable*/
 var Contact= require('../models/Contact');
 var express =require('express');
 var mongoose =require('mongoose');
@@ -34,7 +35,7 @@ router.put('/:id', function(req,res,next){
 });
 
 router.delete('/:id',function(req,res,next){
-    Contact.findByIdAndRemove(req.paras.id, req.body, function(err,post){
+    Contact.findByIdAndRemove(req.params.id, req.body, function(err,post){
         if(err) return next(err);
         res.json(post);
     });

@@ -7,7 +7,7 @@
              <div v-if="error" class="alert alert-danger">{{error}}</div>
 				<form action="#" @submit.prevent="submit" class="login100-form validate-form">
 					<span style="margin-top:100px;" class="login100-form-title p-b-70">
-						Welcome
+						Login
 					</span>
 							<span class="login100-form-avatar">
 						<img src="../../assets/img/avatar.png" alt="AVATAR">

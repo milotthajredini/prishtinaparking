@@ -28,9 +28,11 @@
                        <router-link class="nav-link" to="/contact">
                     <li><a href="#">Contact</a></li>
                     </router-link>
-                            <router-link class="nav-link" to="/user">
+                    <template v-if="user.loggedIn">
+                            <router-link v-if="user.data.firebase_id==='7MLDzYN8U7gsQowp8wEZYbgJTr73'"  class="nav-link" to="/user">
                     <li><a href="#">User</a></li>
                     </router-link>
+                    </template>
                       <!-- <router-link v-if="user.loggedIn" class="nav-link" to="/dashboard">
                     <li><a href="#">Parking History</a></li>
                     </router-link> -->
@@ -68,10 +70,7 @@ import { mapGetters } from "vuex";
 import firebase from "firebase";
 export default {
   computed: {
-    ...mapGetters({
-// map `this.user` to `this.$store.getters.user`
-      user: "user"
-    })
+    ...mapGetters(["user"])
   },
   methods: {
     signOut() {

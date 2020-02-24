@@ -1,5 +1,6 @@
 <template>
   <div>
+    
     <app-Header></app-Header>
     
     <router-view></router-view>
@@ -19,6 +20,7 @@ import Footer from './components/Footer.vue';
 
 
 export default {
+    name:'App',
    data(){
             return{
                 text:'Hello World'

@@ -26,8 +26,9 @@ export default new Vuex.Store({
       commit("SET_LOGGED_IN", user !== null);
       if (user) {
         commit("SET_USER", {
+          firebase_id: user.uid,
           displayName: user.displayName,
-          email: user.email
+          email: user.email,
         });
       } else {
         commit("SET_USER", null);

@@ -1,3 +1,4 @@
+/*eslint-disable*/
 var Payparking = require('../models/Payparking');
 var express =require('express');
 var mongoose =require('mongoose');
@@ -32,7 +33,7 @@ router.put('/:id', function(req,res,next){
 });
 
 router.delete('/:id',function(req,res,next){
-    Payparking.findByIdAndRemove(req.paras.id, req.body, function(err,post){
+    Payparking.findByIdAndRemove(req.params.id, req.body, function(err,post){
         if(err) return next(err);
         res.json(post);
     });

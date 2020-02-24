@@ -1,6 +1,6 @@
 <template>
-<div class="container features">
-     <h3>Edit the User</h3>
+<div style="padding-top:200px;margin-left:40%;width:350px;" class="container">
+     <h2 style="margin-left:50px;margin-bottom:20px;">Edit Users Complains</h2>
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12">
     <form @submit="onSubmit">
@@ -13,7 +13,9 @@
     <div class="form-group">
     <textarea class="form-control" rows="4" placeholder="Enter your comments about site" v-model="contact.description"></textarea>
     </div>
-    <input type="submit" class="btn btn-secondary btn-block" value="Send">
+      <div class="form-group">
+    <input type="submit"  style="width:320px:font-size:12px;"  class="btn btn-secondary btn-block" value="Edit">
+      </div>  
     </form>
     </div>
     </div>
