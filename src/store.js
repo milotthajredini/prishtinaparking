@@ -6,11 +6,15 @@ export default new Vuex.Store({
     user: {
       loggedIn: false,
       data: null
-    }
+    },
+    showOra: false
   },
   getters: {
-    user(state){
-      return state.user
+    user(state) {
+      return state.user;
+    },
+    showOra(state) {
+      return state.showOra;
     }
   },
   mutations: {
@@ -19,6 +23,9 @@ export default new Vuex.Store({
     },
     SET_USER(state, data) {
       state.user.data = data;
+    },
+    SET_SHOWORA(state, value) {
+      state.showOra = value;
     }
   },
   actions: {
@@ -28,11 +35,14 @@ export default new Vuex.Store({
         commit("SET_USER", {
           firebase_id: user.uid,
           displayName: user.displayName,
-          email: user.email,
+          email: user.email
         });
       } else {
         commit("SET_USER", null);
       }
+    },
+    updateShowOra({ commit }, value) {
+      commit("SET_SHOWORA", value);
     }
   }
 });
