@@ -6,8 +6,8 @@
 <style  scoped src="../../assets/css/table.css" ></style>
 
 
-<template>
-  <div class="container" style="padding-top:150px;">
+<template >
+  <div v-if="user.loggedIn" class="container" style="padding-top:150px;">
     <div style="width:150px;font-size:15px;" class="custom-control custom-switch">
       <input v-model="showTime" type="checkbox" class="custom-control-input" id="customSwitch1" />
       <label style="font-size:15px;" class="custom-control-label" for="customSwitch1">Show Ora</label>
@@ -36,7 +36,8 @@
               <button
                 type="button"
                 style="margin-right:15px;width:50px;font-size:12px;margin-left:-65px"
-                class="btn btn-warning"
+                class="btn btn-info"
+                v-if="user.data.firebase_id==='7MLDzYN8U7gsQowp8wEZYbgJTr73'"
                 @click.stop="editpayparking(payparking._id)"
               >Edit</button>
               <button
@@ -66,7 +67,13 @@
 	</div>
     </vue-good-table>-->
   </div>
+  <div v-else>
+    <h1
+      style="padding-top:15%;text-align:middle-center;align-content:middle-center;font-family:'Montserrat';font-size:35px;display:flex;justify-content:center;"
+    >Acces Deined</h1>
+  </div>
 </template>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/js/mdb.min.js"></script>
 <script>
@@ -79,7 +86,6 @@ export default {
   data() {
     return {
       payparking: {},
-      exampleItems,
       showTime: null
     };
   },
