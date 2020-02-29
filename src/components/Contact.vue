@@ -9,72 +9,42 @@
     <div id="site-content">
       <div class="back">
         <div class="container">
-          <div class="container-contact100" style="padding-top: 200px;
-    margin-left: -305px;">
-            <div
-              class="contact100-map"
-              id="google_map"
-              data-map-x="40.722047"
-              data-map-y="-73.986422"
-              data-pin="images/icons/map-marker.png"
-              data-scrollwhell="0"
-              data-draggable="1"
-            ></div>
-
-            <div class="wrap-contact100">
-              <span class="contact100-form-symbol">
-                <img src="../assets/img/icons/symbol-01.png" alt="SYMBOL-MAIL" />
-              </span>
-
-              <form
-                action="#"
-                @submit.prevent="onSubmit"
-                class="contact100-form validate-form flex-sb flex-w"
-              >
-                <span class="contact100-form-title">Na Kontaktoni</span>
-
-                <div class="wrap-input100 rs1 validate-input" data-validate="Name is required">
-                  <input
-                    class="input100"
-                    type="text"
-                    name="name"
-                    v-model="contact.name"
-                    placeholder="Name"
-                  />
-                  <span class="focus-input100"></span>
-                </div>
-
-                <div
-                  class="wrap-input100 rs1 validate-input"
-                  data-validate="Email is required: e@a.z"
-                >
-                  <input
-                    class="input100"
-                    type="text"
-                    name="email"
-                    v-model="contact.email"
-                    placeholder="Email Address"
-                  />
-                  <span class="focus-input100"></span>
-                </div>
-
-                <div class="wrap-input100 validate-input" data-validate="Message is required">
-                  <textarea
-                    class="input100"
-                    name="message"
-                    v-model="contact.description"
-                    placeholder="Write Us A Message"
-                  ></textarea>
-                  <span class="focus-input100"></span>
-                </div>
-
-                <div class="container-contact100-form-btn">
-                  <button type="submit" class="contact100-form-btn">Send</button>
-                </div>
-              </form>
-            </div>
+          <div class="contact-clean">
+            <form action="#" @submit.prevent="onSubmit">
+              <h2 class="text-center">Contact us</h2>
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  v-model="contact.name"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-control is-invalid"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  v-model="contact.email"
+                />
+                <small class="form-text text-danger">Please enter a correct email address.</small>
+              </div>
+              <div class="form-group">
+                <textarea
+                  v-model="contact.description"
+                  class="form-control"
+                  name="message"
+                  placeholder="Message"
+                  rows="14"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-primary" type="submit">send</button>
+              </div>
+            </form>
           </div>
-
           <div id="dropDownSelect1"></div>
         </div>
 
