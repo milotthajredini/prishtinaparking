@@ -10,7 +10,7 @@
     <div class="backgroundi">
       <div id="forma1" class="d-xl-flex justify-content-xl-center align-items-xl-center">
         <h1 id="parkingslog">Paguaj parkingun</h1>
-        <form action="#" @submit.prevent="onSubmit" style="width: 600px;height: 200px;">
+        <form id="formapay" action="#" @submit.prevent="onSubmit" style="width: 600px;height: 200px;">
           <input
             v-model="payparking.targat"
             required

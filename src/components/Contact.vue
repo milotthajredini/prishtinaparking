@@ -23,13 +23,12 @@
               </div>
               <div class="form-group">
                 <input
-                  class="form-control is-invalid"
+                  class="form-control "
                   type="email"
                   name="email"
                   placeholder="Email"
                   v-model="contact.email"
                 />
-                <small class="form-text text-danger">Please enter a correct email address.</small>
               </div>
               <div class="form-group">
                 <textarea

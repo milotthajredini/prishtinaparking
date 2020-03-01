@@ -4,6 +4,7 @@
 <style  scoped href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" ></style>
 <style  scoped href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" ></style>
 <style  scoped src="../../assets/css/table.css" ></style>
+<style  scoped src="../../assets/css/history.css" ></style>
 
 
 <template >
@@ -14,7 +15,7 @@
     </div>
 
     <div style="overflow:auto;height:500px;">
-      <table style="font-size:15px;" class="table table-striped">
+      <table id="tab1" style="font-size:15px;" class="table table-striped">
         <thead>
           <tr class="sticky-top" style="text-align:center;">
             <th scope="col">Targat</th>
@@ -32,8 +33,9 @@
             <td>{{ payparking.qyteti }}</td>
             <td>{{payparking.cmimi}}</td>
             <td v-if="showOra">{{moment(payparking. updated_date).format('DD/MM/YYYY hh:mm')}}</td>
-            <td>
+            <td id="but">
               <button
+              id="but1"
                 type="button"
                 style="margin-right:15px;width:50px;font-size:12px;margin-left:-65px"
                 class="btn btn-info"

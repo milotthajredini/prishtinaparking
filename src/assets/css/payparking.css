@@ -1,3 +1,4 @@
+/*eslint-disable*/
 .backgroundi {
   width: 100%;
   height: 100vh;
@@ -30,7 +31,7 @@
 }
 .form-control {
   border-radius: 30px;
-  border-color: #66666;
+  border-color: #6666;
   margin-bottom: 25px;
   height: 47px;
   border-width: 3px;
@@ -71,7 +72,7 @@ button:not(:disabled) {
   #forma1 {
     width: 200px !important;
     margin: auto !important;
-    margin-top: 110% !important;
+    margin-top: 120% !important;
     display: flex;
     justify-content: center;
   }
@@ -89,11 +90,11 @@ button:not(:disabled) {
     z-index: auto;
   }
 
-  form {
+  #formapay {
     width: 200px !important;
     margin: auto !important;
     margin-left: 10% !important;
-    margin-top: -40px !important;
+    margin-top: -0px !important;
   }
 
   .form-control {
@@ -120,4 +121,201 @@ button:not(:disabled) {
   #shto {
     margin-right: -250px !important;
   }
+}
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .backgroundi {
+      width: 100%;
+      height: 130vh;
+      background-image: url("../img/logomobilepay.png");
+      background-position: center top;
+      background-size: cover;
+    }
+    #forma1 {
+      width: 100px !important;
+      margin: auto !important;
+      margin-top: 110% !important;
+      display: flex;
+      justify-content: center;
+    }
+    #parkingslog {
+      font-size: 25px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      color: #666666;
+      /* margin-top: -740px; */
+      width: 250px !important;
+      position: absolute;
+      margin-left: 100% !important;
+      padding-top: 100px;
+  
+      z-index: auto;
+    }
+  
+   #formapay {
+      width: 100px !important;
+      margin: auto !important;
+      margin-left: 10% !important;
+      margin-top: -40px !important;
+    }
+  
+    .form-control {
+      width: 310px !important;
+    }
+    .radiobtn {
+      display: flex;
+      margin: auto;
+      margin-left: 10%;
+    }
+    label {
+      margin-left: 10%;
+    }
+    #paguajbtn {
+      width: 145px !important;
+    }
+    #totalibtn {
+      width: 145px !important;
+    }
+    .btnpay {
+      display: inline-flex !important;
+      padding-bottom: 200px !important;
+    }
+  
+  
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .backgroundi {
+      width: 100%;
+      height: 130vh;
+      background-image: url("../img/logomobilepay.png");
+      background-position: center top;
+      background-size: cover;
+    }
+    #forma1 {
+      width: 100px !important;
+      margin: auto !important;
+      margin-top: 113% !important;
+      display: flex;
+      justify-content: center;
+    }
+    #parkingslog {
+      font-size: 25px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      color: #666666;
+      /* margin-top: -740px; */
+      width: 250px !important;
+      position: absolute;
+      margin-left: 135% !important;
+      padding-top: 110px;
+  
+      z-index: auto;
+    }
+  
+    #formapay {
+      width: 100px !important;
+      margin: auto !important;
+      margin-left: 10% !important;
+      margin-top: -30px !important;
+    }
+  
+    .form-control {
+      width: 350px !important;
+    }
+    .radiobtn {
+      display: flex;
+      margin: auto;
+      margin-left: 10%;
+    }
+    label {
+      margin-left: 10%;
+    }
+    #paguajbtn {
+      width: 170px !important;
+    }
+    #totalibtn {
+      width: 170px !important;
+    }
+    .btnpay {
+      display: inline-flex !important;
+      padding-bottom: 200px !important;
+    }
+}
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .backgroundi {
+      width: 100%;
+      height: 130vh;
+      background-image: url("../img/logomobilepay.png");
+      background-position: center top;
+      background-size: cover;
+    }
+    #forma1 {
+      width: 100px !important;
+      margin: auto !important;
+      margin-top: 113% !important;
+      display: flex;
+      justify-content: center;
+    }
+    #parkingslog {
+      font-size: 25px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      color: #666666;
+      /* margin-top: -740px; */
+      width: 250px !important;
+      position: absolute;
+      margin-left: 155% !important;
+      padding-top: 110px;
+  
+      z-index: auto;
+    }
+  
+    #formapay {
+      width: 100px !important;
+      margin: auto !important;
+      margin-left: 10% !important;
+      margin-top: -30px !important;
+    }
+  
+    .form-control {
+      width: 400px !important;
+    }
+    .radiobtn {
+      display: flex;
+      margin: auto;
+      margin-left: 15%;
+    }
+    label {
+      margin-left: 10%;
+    }
+    #paguajbtn {
+      width:195px !important;
+    }
+    #totalibtn {
+      width: 195px !important;
+    }
+    .btnpay {
+      display: inline-flex !important;
+      padding-bottom: 200px !important;
+    }
 }

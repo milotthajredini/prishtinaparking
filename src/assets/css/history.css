@@ -1,0 +1,29 @@
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+body{
+  
+}
+.container{
+    
+      height: 140vh !important;
+      margin-bottom: 100px !important;
+}
+    .table {
+            display: block !important;
+            width: 310px !important;
+        }
+        .table button{
+            display: flex;
+        }
+        #but1{
+            margin-left: 1px !important;
+            margin-bottom: 3px !important;
+        }
+        #tab1{
+            font-size: 12px !important;
+        }
+        footer{
+        }
+}

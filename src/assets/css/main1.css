@@ -359,7 +359,7 @@ textarea.input100 {
 
 @media (max-width: 576px) {
   .wrap-contact100 {
-    padding: 92px 15px 88px 15px;
+    width: 100%;
   }
 }
 
