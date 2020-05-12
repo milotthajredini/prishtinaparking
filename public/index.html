@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../src/assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="../src/assets/css/scroll-footer.css">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/assets/css/Footer-Basic.css" />
+    <link rel="stylesheet" href="../src/assets/css/scroll-footer.css" />
+    <link rel="icon" href="favicon.ico" />
     <title>Parking.com</title>
     <style>
-      a { cursor: pointer; }
-      .pagination {
-         justify-content: center;
-         flex-wrap: wrap;
+      a {
+        cursor: pointer;
       }
-  </style>
+      .pagination {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    </style>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but parking doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but parking doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
     </noscript>
-    <div id="app">
-      
-    </div>
-    <!-- built files will be auto injected -->
+    <div id="app"></div>
   </body>
   <script src="../src/main.js"></script>
   <script>
     $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
-      $('.nav').addClass('affix');
-      console.log("OK");
-  } else {
-      $('.nav').removeClass('affix');
-  }
-});
+      if ($(document).scrollTop() > 50) {
+        $('.nav').addClass('affix');
+        console.log('OK');
+      } else {
+        $('.nav').removeClass('affix');
+      }
+    });
 
-
-$('.navTrigger').click(function () {
-$(this).toggleClass('active');
-console.log("Clicked menu");
-$("#mainListDiv").toggleClass("show_list");
-$("#mainListDiv").fadeIn();
-
-});
+    $('.navTrigger').click(function() {
+      $(this).toggleClass('active');
+      console.log('Clicked menu');
+      $('#mainListDiv').toggleClass('show_list');
+      $('#mainListDiv').fadeIn();
+    });
   </script>
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
-  <script>$(document).ready(function() {
-    $('#example').DataTable( {
-        "pagingType": "full_numbers"
-    } );
-} );</script>
+  <script
+    type="text/javascript"
+    src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"
+  ></script>
+  <script>
+    $(document).ready(function() {
+      $('#example').DataTable({
+        pagingType: 'full_numbers',
+      });
+    });
+  </script>
 </html>
