@@ -1,16 +1,24 @@
-<style src="../assets/css/payparking.css" ></style>
+<style src="../assets/css/payparking.css"></style>
 <style scoped src="../assets/css/scroll-footer.css"></style>
 <style src="../assets/css/Footer-Basic.css" scoped></style>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 </style>
-<template >
+<template>
   <div id="site-content">
     <div class="backgroundi">
-      <div id="forma1" class="d-xl-flex justify-content-xl-center align-items-xl-center">
-        <h1 id="parkingslog">Paguaj parkingun</h1>
-        <form id="formapay" action="#" @submit.prevent="onSubmit" style="width: 600px;height: 200px;">
+      <div
+        id="forma1"
+        class="d-xl-flex justify-content-xl-center align-items-xl-center"
+      >
+        <!-- <h1 id="parkingslog" style="z-index:1">Paguaj parkingun</h1> -->
+        <form
+          id="formapay"
+          action="#"
+          @submit.prevent="onSubmit"
+          style="width: 600px;height: 200px;"
+        >
           <input
             v-model="payparking.targat"
             required
@@ -50,7 +58,8 @@
           </select>
           <label
             style="color: #84bcfd;font-family: Montserrat, sans-serif;font-size: 18px;width: 200px;font-weight: bold;"
-          >Zgjith zonën:</label>
+            >Zgjith zonën:</label
+          >
           <div class="radiobtn" style="margin-bottom:10px;margin-top:5px;">
             <b-form-radio
               style="margin-right:15px;font-size:15px;"
@@ -59,21 +68,24 @@
               v-model="payparking.cmimi"
               value="2€"
               size="lg"
-            >Zona I 2€/h</b-form-radio>
+              >Zona I 2€/h</b-form-radio
+            >
             <b-form-radio
               style="margin-right:15px;font-size:15px;"
               name="radio-size"
               v-model="payparking.cmimi"
               value="1€"
               size="lg"
-            >Zona II 1€/h</b-form-radio>
+              >Zona II 1€/h</b-form-radio
+            >
             <b-form-radio
               style="margin-right:15px;font-size:15px;"
               name="radio-size"
               v-model="payparking.cmimi"
               value="0.50€"
               size="lg"
-            >Zona III 0.50€/h</b-form-radio>
+              >Zona III 0.50€/h</b-form-radio
+            >
           </div>
           <div class="btnpay">
             <button
@@ -84,7 +96,7 @@
               style="width: 210px;border-width: 3px;border-radius: 30px;background-color: #fff;font-size: 20px;color: #252525;font-family: Montserrat, sans-serif;font-weight: bold;height: 47px;margin-right: 15px;border-color: #8ed2c0;"
             >
               Totali:
-              <strong>{{payparking.cmimi}}</strong>
+              <strong>{{ payparking.cmimi }}</strong>
             </button>
 
             <button
@@ -92,7 +104,9 @@
               id="paguajbtn"
               type="submit"
               style="width: 210px;height: 47px;border-radius: 30px;font-size: 20px;font-family: Montserrat, sans-serif;font-weight: bold;background-color: #84bcdf;border-color: #84bcdf;"
-            >Paguaj</button>
+            >
+              Paguaj
+            </button>
           </div>
         </form>
       </div>
@@ -100,30 +114,28 @@
   </div>
 </template>
 
-
-
 <script>
 /* eslint-disable*/
-import axios from "axios";
-import { mapGetter, mapGetters } from "vuex";
+import axios from 'axios';
+import { mapGetter, mapGetters } from 'vuex';
 
 export default {
-  name: "CreatePayparking",
+  name: 'CreatePayparking',
   data() {
     return {
       payparking: {
-        firebase_id: ""
+        firebase_id: '',
       },
-      selected: " ",
+      selected: ' ',
       options: [
-        { text: "Zona I 2€/h", value: 2.0 },
-        { text: "Zona II 1€/h", value: 1.0 },
-        { text: "Zona III 0.50€/h", value: 0.5 }
-      ]
+        { text: 'Zona I 2€/h', value: 2.0 },
+        { text: 'Zona II 1€/h', value: 1.0 },
+        { text: 'Zona III 0.50€/h', value: 0.5 },
+      ],
     };
   },
   computed: {
-    ...mapGetters(["user"])
+    ...mapGetters(['user']),
   },
   methods: {
     onSubmit() {
@@ -133,15 +145,16 @@ export default {
       console.log(parking);
       parking.firebase_id = this.user.data.firebase_id;
 
-      axios.post(`http://localhost:4000/payparking`, parking).then(response => {
-        //console.log(response);
-        this.$router.push({
-          name: "home"
-          //params: { id: response.data._id }
+      axios
+        .post(`http://localhost:4000/payparking`, parking)
+        .then((response) => {
+          //console.log(response);
+          this.$router.push({
+            name: 'home',
+            //params: { id: response.data._id }
+          });
         });
-      });
-    }
-  }
+    },
+  },
 };
 </script>
-

@@ -1,8 +1,7 @@
 <style scoped src="../assets/css/buttonhome.css"></style>
 <style scoped src="../assets/css/scroll-footer.css"></style>
 <style src="../assets/css/Footer-Basic.css" scoped></style>
-<style src="../../node_modules/ionicons/dist/css/ionicons.min.css" scoped></style>
-<style src="../../node_modules/ionicons/dist/css/ionicons-core.css" scoped></style>
+
 <style scoped src="../assets/css/buttonhome.css"></style>
 <template>
   <div id="site-content">
